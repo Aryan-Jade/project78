@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>project</title>
+</head>
+<body>
+<h1>My Family Book</h1>
+<img id="album"src="https://images-na.ssl-images-amazon.com/images/I/51K7T8ZNRTL.jpg">
+<p id="text"></p>
+<div><button type="button" onclick="nextslide()">next</button></div>
+<script>
+    var reason=[
+"Umesh Jade",
+"Dipti Jade",
+"Aryan Jade",
+]
+var images=[
+"https://thumbs.dreamstime.com/b/father-portrait-handsome-man-shirt-jeans-sweater-wearing-glasses-cartoon-character-standing-dad-vector-illustration-86364395.jpg",
+"https://thumbs.dreamstime.com/b/standing-young-mother-standing-young-mother-simple-vector-illustration-101319887.jpg",
+"https://i.pinimg.com/736x/c1/fd/b6/c1fdb69590f65bf4290ff3c41ef28cec.jpg"
+]
+var i=0;
+function nextslide(){
+document.getElementById("text").innerHTML=reason[i];
+document.getElementById("album").src=images[i];
+i++;
+}
+</script>
+</body>
+</html>
